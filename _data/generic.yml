@@ -6,7 +6,9 @@ owner: tomjoht
 folders:
 - title: Theme documentation
   folderitems:
-
+  - title: Home
+    url: /
+    
   - title: Sample 1
     url: /sample1.html
 
@@ -56,5 +58,3 @@ related_resources_list:
 
 - title: Github
   url: http://github.com
-
-
