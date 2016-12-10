@@ -5,4 +5,6 @@ sidebar: generic
 layout: default
 ---
 
-The Jekyll documentation theme is [here](https://github.com/tomjohnson1492/documentation-theme-jekyll). I'm working on a next version that will hopefully make a host of improvements. Once finished, the new version will move into the other repo.
+I'm working on a new version of the Jekyll documentation theme here. This theme is currently under development. If you want to start using the previous theme, see [this repo](https://github.com/tomjohnson1492/documentation-theme-jekyll).
+
+I'm targeting the end of the year to finish this new version.
