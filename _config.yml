@@ -1,0 +1,38 @@
+port: 4001
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      sidebar: home
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      sidebar: generic
+  -
+    scope:
+      path: ""
+      type: "apidocs"
+    values:
+      layout: "default"
+      tooltip: true
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

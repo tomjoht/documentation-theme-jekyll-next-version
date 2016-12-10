@@ -1,0 +1,183 @@
+podcast_list_title: Favorite Podcasts
+podcasts:
+
+- title: This Week in Tech
+  url: https://twit.tv/shows/this-week-in-tech
+
+- title: Radio Lab
+  url: http://www.radiolab.org/
+
+- title: Night Vale
+  url: http://www.welcometonightvale.com/
+  
+basiclist:
+- This Week in Tech
+- Radio Lab
+- Night Vale
+
+toc:
+  - title: Group 1
+    subfolderitems:
+      - page: Thing 1
+        url: /thing1.html
+      - page: Thing 2
+        url: /thing2.html
+      - page: Thing 3
+        url: /thing3.html
+  - title: Group 2
+    subfolderitems:
+      - page: Piece 1
+        url: /piece1.html
+      - page: Piece 2
+        url: /piece2.html
+      - page: Piece 3
+        url: /piece3.html
+  - title: Group 3
+    subfolderitems:
+      - page: Widget 1
+        url: /widget1.html
+      - page: Widget 2
+        url: /widget2.html
+      - page: Widget 3
+        url: /widget3.html
+
+
+
+
+entries:
+- title: Sidebar
+  folders:
+  - title: Food
+
+    folderitems:
+    - title: Bananas
+      url: bananas.html
+
+      subfolder:
+      - title: Apples
+
+        subfolderitems:
+        - title:  Fuji apples
+          url: fuji_apples.html
+
+
+        - title: Gala apples
+          url: gala_apples.html
+
+name:
+  husband: Tom
+  wife: Shannon
+
+
+
+
+  
+  
+  
+  
+folders:
+  - title: First level 
+    folderitems:
+  
+    - title: Sample 1
+      url: /sample1.html
+  
+    - title: Sample 2
+      url: /sample2.html
+  
+    - title: Sample 3
+      url: /sample3.html
+        
+    - title: Sample 1
+      url: /sample1.html
+  
+    - title: Sample 2
+      url: /sample2.html
+  
+    - title: Sample 3
+      url: /sample3.html
+    
+    - title: Sample 1
+      url: /sample1.html
+  
+    - title: Sample 2
+      url: /sample2.html
+  
+    - title: Sample 3
+      url: /sample3.html
+
+    subfolders:
+    - title: Second level 
+      subfolderitems:
+
+      - title: Sublevel 1
+        url: /sublevel1.html
+
+      - title: Sublevel 2
+        url: /sublevel2.html
+
+      - title: Sublevel 3
+        url: /sublevel3.html  
+
+salesteams:
+  - title: Regions
+    subfolderitems:
+      - location: US
+      - location: Spain
+      - location: France
+
+
+
+something: &hello Greetings earthling!
+myref: *hello
+
+about:
+ - zero
+ - one
+ - two
+ - three 
+
+numbercolors:
+ - zero:
+   properties: red
+ - one:
+   properties: yellow
+ - two: 
+   properties: green
+ - three:
+   properties: blue
+
+mypages:
+- section1: Section 1
+  audience: developers
+  product: acme
+  url: facebook.com
+- section2: Section 2
+  audience: writers
+  product: acme
+  url: google.com
+- section3: Section 3
+  audience: developers
+  product: acme
+  url: amazon.com
+- section4: Section 4
+  audience: writers
+  product: gizmo
+  url: apple.com
+- section5: Section 5
+  audience: writers
+  product: acme
+  url: microsoft.com
+
+feedback: > 
+  This is my feedback to you.
+  Even if I include linebreaks here,
+  all of the linebreaks will be removed when the value is inserted.
+    
+block: |
+    This pipe does something a little different. 
+    It preserves the breaks.
+    This is really helpful for code samples, 
+    since you can format the code samples with
+       the appropriate
+       white spacing.

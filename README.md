@@ -1,2 +1,2 @@
-# documentation-theme-jekyll-next-version
-The next version of the Jekyll documentation theme
+# jekyll-documentation-theme-next-version
+Next version of the Jekyll documentation theme
