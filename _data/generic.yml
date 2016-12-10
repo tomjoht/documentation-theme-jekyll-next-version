@@ -7,7 +7,7 @@ folders:
 - title: Theme documentation
   folderitems:
   - title: Home
-    url: /
+    url: /index.html
 
   - title: Sample 1
     url: /sample1.html

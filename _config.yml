@@ -1,5 +1,14 @@
-# Displays as site title on top nav bar
+# Displays as site title on top nav bar and on site metadata
 title: Jekyll Documentation theme
+
+# Displays as site description meta
+description: Documentation theme for Jekyll websites
+
+# Link to home
+url: /
+
+# link to github repo
+github_editme_path: http://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/pages/
 
 port: 4001
 highlighter: rouge
@@ -44,5 +53,5 @@ exclude:
 ####### Algolia configuration ###########
 algolia:
   application_id: "HXUBJERYYB"
-  index_name: "documentation-theme-jekyll-next-version"
+  index_name: "documentation-theme-jekyll"
   record_css_selector: 'p,ul,.summary'

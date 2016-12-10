@@ -97,5 +97,5 @@ hr.resourceSeparator {
     /*margin-right: auto;*/
     border-width: 1px;
     color: black;
-    width: 250px;
+    max-width: 80%;
 }

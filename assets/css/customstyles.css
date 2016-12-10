@@ -11,7 +11,6 @@ body {
 #sidebar {
     height: 100%;
     padding-right: 0;
-    padding-top: 20px;
 }
 #sidebar .nav {
     width: 95%;
@@ -51,3 +50,71 @@ body {
 }
 
 /* end bootswatch theme */
+
+/* custom styles tom */
+
+h1 {
+    margin-top: 50px;
+}
+
+/* mini toc styles start */
+div#toc ul li {
+    margin: 8px 0px 8px 22px;
+    font-size: 90%;
+    list-style: square;
+}
+
+div#toc >ul::before {
+    content: "Table of Contents";
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+div#toc ul {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 300px;
+    color: gray;
+}
+/* mini toc styles end */
+
+/* this part adds an icon after external links, using FontAwesome*/
+a[href^="http://"]:after, a[href^="https://"]:after {
+    content: "\f08e";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+/* Strip the outbound icon when this class is present */
+a[href].noCrossRef::after,
+a.no_icon:after
+ {
+    content:"" !important;
+    padding-left: 0;
+}
+
+/* Github edit button */
+.githubEditButton {
+   padding: 5px;
+   color: black;
+   float: right;
+}
+a.github {
+    color: black;
+}
+
+i.fa.fa-github.fa-lg {
+    color: black;
+}

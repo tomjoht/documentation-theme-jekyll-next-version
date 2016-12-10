@@ -4,7 +4,7 @@ permalink: building-a-jekyll-theme.html
 sidebar: generic
 ---
 
-## Introduction 
+## Introduction
 
 - theming a jekyll site is a lot easier than creating a WP site
 - start with an existing html framework, add a few jekyll tags, and you’re off
@@ -23,6 +23,10 @@ no need for bundle init right now. not using any gems, and want to keep it this 
 ## Create a default layout
 create _layout folder_
 put default.html into this folder
+put frontmatter tags in default.html
+add variables for site.title, site.description, page.title
+
+in config file:
 
 
 highlighter: rouge
@@ -81,8 +85,8 @@ This is some content.
 
 Now build the site with jekyll serve.
 
-make sure you have Ruby and RubyGems installed. 
-Then use this: 
+make sure you have Ruby and RubyGems installed.
+Then use this:
 
 gem install jekyll bundler
 
@@ -102,4 +106,3 @@ add _data file. store some stuff there.
 
 ## set up syntax highlighting
 - syntax.css
-
