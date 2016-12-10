@@ -2,7 +2,7 @@
     $( document ).ready(function() {
         $("#docnavsidebar").navgoco({
             caretHtml: '',
-            accordion: false,
+            accordion: true,
             openClass: 'open', // open
             save: false, // leave false or nav highlighting doesn't work right
             cookie: {
@@ -11,7 +11,7 @@
                 path: '/'
             },
             slide: {
-                duration: 0,
+                duration: 200,
                 easing: 'swing'
             }
         });

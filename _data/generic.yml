@@ -44,6 +44,16 @@ folders:
           - title: Sub-sublevel 3
             url: /subsublevel3.html
 
+- title: Another folder level
+  folderitems:
+  - title: Sample 1
+    url: /sample1.html
+
+  - title: Sample 2
+    url: /sample2.html
+
+  - title: Sample 3
+    url: /sample3.html
 ###########################
 
 related_resources_title: Other Resources

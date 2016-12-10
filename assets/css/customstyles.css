@@ -1,6 +1,15 @@
 /* from the bootswatch theme */
 body {
     padding-top: 51px;
+    font-family: arial;
+}
+
+.col-xs-10.col-sm-7 {
+    margin-left: 260px;
+}
+/* heading font */
+h1, h2, h3, h4, h5 {
+    font-family: Tahoma;
 }
 .text-center {
     padding-top: 20px;
@@ -106,15 +115,22 @@ a.no_icon:after
 }
 
 /* Github edit button */
-.githubEditButton {
-   padding: 5px;
-   color: black;
+div.githubEditButton {
    float: right;
 }
-a.github {
-    color: black;
+
+i.fa.fa-github.fa-lg:hover, a.btn.btn-github.noCrossRef:hover {
+    color: #666;
 }
 
-i.fa.fa-github.fa-lg {
-    color: black;
+.btn-default {
+    color: #222222;
+    background-color: white;
+    border-color: #dedede;
+    border-radius: 5px;
+}
+.btn-default:hover {
+    background-color: #fefefe;
+    color: #444;
+    border-color: #dedede;
 }
