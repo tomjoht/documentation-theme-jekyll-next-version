@@ -1,3 +1,6 @@
+# Displays as site title on top nav bar
+title: Jekyll Documentation theme
+
 port: 4001
 highlighter: rouge
 
@@ -36,3 +39,10 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+####### Algolia configuration ###########
+algolia:
+  application_id: "HXUBJERYYB"
+  index_name: "documentation-theme-jekyll-next-version"
+  record_css_selector: 'p,ul,.summary'

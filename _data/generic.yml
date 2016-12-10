@@ -1,5 +1,5 @@
-sidebarTitle: Jekyll How-to Guide
-owner: tomjoht
+sidebarTitle: Generic sidebar
+owner: tomjohnson1492
 
 ## Keep this commented out content because it shows the YAML model for the sidebar.
 
@@ -8,7 +8,7 @@ folders:
   folderitems:
   - title: Home
     url: /
-    
+
   - title: Sample 1
     url: /sample1.html
 
