@@ -1,0 +1,200 @@
+/* from the bootswatch theme */
+body {
+    padding-top: 51px;
+    font-family: arial;
+}
+
+.col-xs-10.col-sm-7 {
+    margin-left: 260px;
+}
+/* heading font */
+h1, h2, h3, h4, h5 {
+    font-family: Tahoma;
+}
+.text-center {
+    padding-top: 20px;
+}
+.col-xs-12 {
+    background-color: #fff;
+}
+#sidebar {
+    height: 100%;
+    padding-right: 0;
+}
+#sidebar .nav {
+    width: 95%;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+    }
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -41.6%;
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -41.6%;
+    }
+    .row-offcanvas-right.active {
+        right: 41.6%;
+    }
+    .row-offcanvas-left.active {
+        left: 41.6%;
+    }
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 41.6%;
+    }
+    #sidebar {
+        padding-top:0;
+    }
+}
+
+/* end bootswatch theme */
+
+/* custom styles tom */
+
+h1 {
+    margin-top: 50px;
+}
+
+/* mini toc styles start */
+div#toc ul li {
+    margin: 8px 0px 8px 22px;
+    font-size: 90%;
+    list-style: square;
+}
+
+div#toc >ul::before {
+    content: "Table of Contents";
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+div#toc ul {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 300px;
+    color: gray;
+}
+/* mini toc styles end */
+
+/* this part adds an icon after external links, using FontAwesome*/
+a[href^="http://"]:after, a[href^="https://"]:after {
+    content: "\f08e";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+/* Strip the outbound icon when this class is present */
+a[href].noCrossRef::after,
+a.no_icon:after
+ {
+    content:"" !important;
+    padding-left: 0;
+}
+
+/* Github edit button */
+
+i.fa.fa-github.fa-lg:hover, a.githubButton.noCrossRef:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a.editButton {
+    color: #000000;
+}
+
+a.editButton:hover {
+    text-decoration: none;
+    color: #777;
+}
+
+.githubButton{
+    color: black;
+    background-color: white;
+    float: right;
+    border: 1px solid #dedede;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 10px;
+}
+.githubButton:hover {
+    background-color: #fefefe;
+    color: #444;
+    text-decoration: none;
+}
+
+/* end github button */
+/* search area */
+#search-demo-container ul#results-container {
+    list-style: none;
+    font-size: 12px;
+    background-color: white;
+    position: absolute;
+    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    left: 20px;
+    z-index: -1;
+    width:223px;
+    border-left: 1px solid #dedede;
+    box-shadow: 2px 3px 2px #dedede;
+}
+
+
+ul#results-container a {
+    background-color: transparent;
+}
+
+ul#results-container a: hover {
+    color: black;
+}
+
+
+#search-demo-container a:hover {
+    color: black;
+}
+#search-input {
+    padding: .5em;
+    margin-left:20px;
+    width:20em;
+    font-size: 0.8em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    margin-top:10px;
+}
+#search-results {
+    margin-top:30px;
+}
+div.searchFormDisplay {
+    display: none;
+}
+
+/* end search */
+
+span.projectTitle {
+    font-family: Arial;
+    font-weight: bold;
+
+}

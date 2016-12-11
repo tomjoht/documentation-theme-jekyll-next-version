@@ -1,0 +1,70 @@
+sidebarTitle: Generic sidebar - German
+owner: tomjohnson1492
+
+## Keep this commented out content because it shows the YAML model for the sidebar.
+
+folders:
+- title: Theme documentation - German
+  folderitems:
+  - title: Home - German
+    url: /index.html
+
+  - title: Sample 1 - German
+    url: /sample1.html
+
+  - title: Sample 2 - German
+    url: /sample2.html
+
+  - title: Sample 3 - German
+    url: /sample3.html
+
+    subfolders:
+    - title: Second level deep - German
+      subfolderitems:
+
+      - title: Sublevel 1 - German
+        url: /sublevel1.html
+
+      - title: Sublevel 2 - German
+        url: /sublevel2.html
+
+      - title: Sublevel 3 - German
+        url: /sublevel3.html
+
+        subsubfolders:
+        - title: Third level deep - German
+          subsubfolderitems:
+
+          - title: Sub-sublevel 1 - German
+            url: /subsublevel1.html
+
+          - title: Sub-sublevel 2 - German
+            url: /subsublevel2.html
+
+          - title: Sub-sublevel 3 - German
+            url: /subsublevel3.html
+
+- title: Another folder level - German
+  folderitems:
+  - title: Sample 1 - German
+    url: /sample1.html
+
+  - title: Sample 2 - German
+    url: /sample2.html
+
+  - title: Sample 3 - German
+    url: /sample3.html
+###########################
+
+related_resources_title: Other Resources - German
+
+related_resources_list:
+
+- title: Jekyll - German
+  url: http://jekyllrb.com
+
+- title: I'd Rather Be Writing - German
+  url: http://idratherbewriting.com
+
+- title: Github - German
+  url: http://github.com

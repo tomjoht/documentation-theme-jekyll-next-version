@@ -1,5 +1,7 @@
 {% if site.github_editme_path %}
 
-    <div class="githubEditButton"><a target="_blank" href="{{site.github_editme_path}}{{page.path}}" class="btn btn-github btn-default noCrossRef" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a></div>
+    <span class="githubButton">
+        <a target="_blank" href="{{site.github_editme_path}}{{page.path | remove: "/pages"}}" class="editButton noCrossRef"><i class="fa fa-github fa-lg"></i> {{site.github_edit_button_text}}</a>
+    </span>
 
 {% endif %}

@@ -89,13 +89,13 @@
     </li>
 </ul>
 
-
 <hr class="resourceSeparator"></hr>
 <div class="relatedResources">{{sidebar.related_resources_title}}</div>
 <ul id="entrypages">
         {% for item in sidebar.related_resources_list %}
-        <li><a href="{{item.url }}">{{item.title}}</a></li>
+        <li><a class="noCrossRef" href="{{item.url }}">{{item.title}}</a></li>
         {% endfor %}
     </li>
 </ul>
+
 <script>$("li.open").parents('li').toggleClass("open");</script>

@@ -1,0 +1,55 @@
+language: german
+
+# Displays as site title on top nav bar and on site metadata
+title: Jekyll Documentation theme - DE
+
+# Displays as site description meta
+description: Documentation theme for Jekyll websites - DE
+
+# Link to home
+url: /
+
+# link to github repo
+github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
+github_edit_button_text: bearbeiten
+
+top_navbar_color: inverse
+#blue --> use "inverse"
+#black --> use "default"
+
+minitoc_title: Inhaltsverzeichnis
+
+port: 4000
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  docs_de:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "docs_de"
+    values:
+      layout: "default"
+      topnav: topnav_de
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+search_placeholder: Suche ...

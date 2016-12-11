@@ -1,3 +1,5 @@
+language: english
+
 # Displays as site title on top nav bar and on site metadata
 title: Jekyll Documentation theme
 
@@ -8,9 +10,12 @@ description: Documentation theme for Jekyll websites
 url: /
 
 # link to github repo
-github_editme_path: http://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/pages/
+github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
+github_edit_button_text: Edit me
 
-port: 4001
+minitoc_title: Table of Contents
+
+port: 4000
 highlighter: rouge
 
 markdown: kramdown
@@ -20,38 +25,27 @@ kramdown:
  hard_wrap: false
  syntax_highlighter: rouge
 
+collections:
+  docs:
+    output: true
 
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "default"
-      sidebar: home
   -
     scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
-      sidebar: generic
   -
     scope:
       path: ""
-      type: "apidocs"
+      type: "docs"
     values:
       layout: "default"
-      tooltip: true
-
+      topnav: topnav
 
 exclude:
   - Gemfile
   - Gemfile.lock
 
-
-####### Algolia configuration ###########
-algolia:
-  application_id: "HXUBJERYYB"
-  index_name: "documentation-theme-jekyll"
-  record_css_selector: 'p,ul,.summary'
+search_placeholder: Search ...

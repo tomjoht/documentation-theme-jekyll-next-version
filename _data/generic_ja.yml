@@ -1,0 +1,70 @@
+sidebarTitle: Generic sidebar - Japanese
+owner: tomjohnson1492
+
+## Keep this commented out content because it shows the YAML model for the sidebar.
+
+folders:
+- title: Theme documentation - Japanese
+  folderitems:
+  - title: Home - Japanese
+    url: /index.html
+
+  - title: Sample 1 - Japanese
+    url: /sample1.html
+
+  - title: Sample 2 - Japanese
+    url: /sample2.html
+
+  - title: Sample 3 - Japanese
+    url: /sample3.html
+
+    subfolders:
+    - title: Second level deep - Japanese
+      subfolderitems:
+
+      - title: Sublevel 1 - Japanese
+        url: /sublevel1.html
+
+      - title: Sublevel 2 - Japanese
+        url: /sublevel2.html
+
+      - title: Sublevel 3 - Japanese
+        url: /sublevel3.html
+
+        subsubfolders:
+        - title: Third level deep - Japanese
+          subsubfolderitems:
+
+          - title: Sub-sublevel 1 - Japanese
+            url: /subsublevel1.html
+
+          - title: Sub-sublevel 2 - Japanese
+            url: /subsublevel2.html
+
+          - title: Sub-sublevel 3 - Japanese
+            url: /subsublevel3.html
+
+- title: Another folder level - Japanese
+  folderitems:
+  - title: Thing 1 - Japanese
+    url: /thing2.html
+
+  - title: Thing 2 - Japanese
+    url: /thing2.html
+
+  - title: Thing 3 - Japanese
+    url: /thing3.html
+###########################
+
+related_resources_title: Other Resources - Japanese
+
+related_resources_list:
+
+- title: Jekyll - Japanese
+  url: http://jekyllrb.com
+
+- title: I'd Rather Be Writing - Japanese
+  url: http://idratherbewriting.com
+
+- title: Github - Japanese
+  url: http://github.com

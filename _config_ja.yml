@@ -1,0 +1,56 @@
+language: japanese
+
+# Displays as site title on top nav bar and on site metadata
+title: Jekyll Documentation theme - JA
+
+# Displays as site description meta
+description: Documentation theme for Jekyll websites - JA
+
+# Link to home
+url: /
+
+# link to github repo
+github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
+github_edit_button_text: 編集
+
+top_navbar_color: inverse
+#blue --> use "inverse"
+#black --> use "default"
+
+minitoc_title: 目次
+
+port: 4000
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  docs_ja:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "docs_ja"
+    values:
+      layout: "default"
+      topnav: topnav_ja
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
+search_placeholder: サーチ ...

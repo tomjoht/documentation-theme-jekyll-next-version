@@ -19,11 +19,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <script src="assets/js/navgoco.jquery.min.js"></script>
-<!--
-    <link href="http://ajax.googleapis.com/ajax/libs/angular_material/0.8.2/angular-material.min.css" rel="stylesheet" />
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/css/datepicker3.min.css" rel="stylesheet" />
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="assets/js/customscripts.js"></script>
 
@@ -32,25 +27,74 @@
     </style>
     <link rel="stylesheet" href="assets/css/syntax.css" />
     <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/customstyles.css" />
 </head>
 <body >
 <div class="page-container">
 
-    <!-- top navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container topnavlinks">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand noCrossRef" href="{{site.url}}">{{site.title}}</a>
+                <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> {{site.title}}</span></a>
             </div>
-        </div>
-    </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- entries without drop-downs appear here -->
+                    {% assign topnav = site.data[page.topnav] %}
+                    {% for entry in topnav.navbar_singleitems %}
+                    {% for item in entry.items %}
+                    {% if item.url contains "http://" or item.url contains "https://" %}
+                    <li><a href="{{item.url}}" class="noCrossRef">{{item.title}}</a></li>
+                    {% elsif page.url contains item.url %}
+                    <li class="active"><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                    {% else %}
+                    <li><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                    <!-- entries with drop-downs appear here -->
 
+                    {% for entry in topnav.navbar_dropdowns %}
+                    {% for folder in entry.folders %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ folder.title }}<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            {% for folderitem in folder.folderitems %}
+                            {% if folderitem.url contains "http://" or folderitem.url contains "https://" %}
+                            <li><a href="{{folderitem.url}}" class="noCrossRef">{{folderitem.title}}</a></li>
+                            {% elsif page.url contains folderitem.url %}
+                            <li class="dropdownActive"><a href="{{folderitem.url |  remove: "/"}}">{{folderitem.title}}</a></li>
+                            {% else %}
+                            <li><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                    {% endfor %}
+
+                    <li>
+                        <!--start search-->
+                        <div id="search-demo-container">
+                 <form action="search.html" method="get">
+                <input type="text" id="search-input" placeholder="{{site.search_placeholder}}" name="query">
+                </form>
+                </div>
+                        <!--end search-->
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <!-- /.container -->
+    </nav>
     <div class="container">
         <div class="row row-offcanvas row-offcanvas-left">
 
@@ -68,7 +112,7 @@
             <!-- main area -->
             <div class="col-xs-12 col-sm-9">
                 <h1>{{page.title}}</h1>
-                {% include github_button.html %}
+                {% unless page.github_button == false %} {% include github_button.html %}{% endunless %}
                 {% unless page.toc == false %} {% include toc.html %} {% endunless %}
                 {{content}}
 
@@ -117,16 +161,9 @@
 <!--scripts loaded here-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.2/angular-material.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/js/bootstrap-datepicker.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>-->
 <script src="{{ "assets/js/toc.js" }}"></script>
 <!-- AnchorJS is used under the MIT license. -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
-
 
 <script>
     $(document).ready(function() {
