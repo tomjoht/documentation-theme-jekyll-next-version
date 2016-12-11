@@ -48,7 +48,8 @@
                     
                     
                     
-                    <li><a href="news">News</a></li>
+                    
+                    <li><a href="news">News - JA</a></li>
                     
                     
                     
@@ -57,46 +58,46 @@
                     
                     
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Resources<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Resources - JA<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
                             
-                            <li><a href="">Github Repo</a></li>
+                            <li><a href="https://github.com/tomjohnson1492/documentation-theme-jekyll" class="noCrossRef">Github Repo - JA</a></li>
                             
                             
                             
-                            <li><a href="">Jekyll Talk</a></li>
+                            <li><a href="https://talk.jekyllrb.com" class="noCrossRef">Jekyll Talk - JA</a></li>
                             
                             
                             
-                            <li><a href="">Jekyll documentation</a></li>
+                            <li><a href="http://jekyllrb.com/docs/home/" class="noCrossRef">Jekyll documentation - JA</a></li>
                             
                             
                             
-                            <li><a href="">Jekyll on Stack Overflow</a></li>
+                            <li><a href="http://stackoverflow.com/questions/tagged/jekyll" class="noCrossRef">Jekyll on Stack Overflow - JA</a></li>
                             
                             
                             
-                            <li><a href="">Jekyll on my blog</a></li>
+                            <li><a href="http://idratherbewriting.com/category-jekyll/" class="noCrossRef">Jekyll on my blog - JA</a></li>
                             
                             
                         </ul>
                     </li>
                     
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products - JA<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
                             
-                            <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
+                            <li><a href="mydoc_introduction.html">Jekyll Documentation Theme- JA</a></li>
                             
                             
                             
-                            <li><a href="p1_landing_page.html">Product 1</a></li>
+                            <li><a href="p1_landing_page.html">Product 1- JA</a></li>
                             
                             
                             
-                            <li><a href="p2_landing_page.html">Product 2</a></li>
+                            <li><a href="p2_landing_page.html">Product 2- JA</a></li>
                             
                             
                         </ul>
@@ -108,7 +109,7 @@
                         <!--start search-->
                         <div id="search-demo-container">
                  <form action="search.html" method="get">
-                <input type="text" id="search-input" placeholder="Search ..." name="query">
+                <input type="text" id="search-input" placeholder="サーチ ..." name="query">
                 </form>
                 </div>
                         <!--end search-->
@@ -310,16 +311,15 @@
     </li>
 </ul>
 
-
 <hr class="resourceSeparator"></hr>
 <div class="relatedResources">Other Resources - Japanese</div>
 <ul id="entrypages">
         
-        <li><a href="http://jekyllrb.com">Jekyll - Japanese</a></li>
+        <li><a class="noCrossRef" href="http://jekyllrb.com">Jekyll - Japanese</a></li>
         
-        <li><a href="http://idratherbewriting.com">I'd Rather Be Writing - Japanese</a></li>
+        <li><a class="noCrossRef" href="http://idratherbewriting.com">I'd Rather Be Writing - Japanese</a></li>
         
-        <li><a href="http://github.com">Github - Japanese</a></li>
+        <li><a class="noCrossRef" href="http://github.com">Github - Japanese</a></li>
         
     </li>
 </ul>
@@ -334,12 +334,17 @@
                  
 
     <span class="githubButton">
-        <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/_docs_ja/generic/sublevel3.md" class="editButton noCrossRef"><i class="fa fa-github fa-lg"></i> Edit me</a>
+        <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/_docs_ja/generic/sublevel3.md" class="editButton noCrossRef"><i class="fa fa-github fa-lg"></i> 編集</a>
     </span>
 
 
 
                  <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<style>
+div#toc >ul::before {
+    content: "目次";
+}
+</style>
 <script>
 $( document ).ready(function() {
   // Handler for .ready() called.
@@ -357,6 +362,7 @@ $('#toc').on('click', 'a', function() {
 
 });
 </script>
+
 
 <div id="toc"></div>
  

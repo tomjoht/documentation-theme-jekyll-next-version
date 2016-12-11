@@ -74,7 +74,6 @@ div#toc ul li {
 }
 
 div#toc >ul::before {
-    content: "Table of Contents";
     font-weight: 500;
     color: #555;
     text-align: center;
@@ -197,4 +196,8 @@ span.projectTitle {
     font-family: Arial;
     font-weight: bold;
 
+}
+
+ul#entrypages li {
+    font-size: 12px;
 }

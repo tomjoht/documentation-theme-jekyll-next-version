@@ -73,9 +73,8 @@ li.level1.open > ul > li.level1items.open > a:before, li.level2.open > ul > li.l
     color: black;
 }
 
-
 .relatedResources {
-    font-size: 15px;
+    font-size: 13px;
     color: black;
     margin:10px 0px;
 }
@@ -91,8 +90,8 @@ li.level1.open > ul > li.level1items.open > a:before, li.level2.open > ul > li.l
 
 hr.resourceSeparator {
     display: block;
-    margin-top: 0.7em;
-    margin-bottom: 0.7em;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
     margin-left: 0px;
     /*margin-right: auto;*/
     border-width: 1px;
