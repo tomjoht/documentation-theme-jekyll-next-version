@@ -1,7 +1,7 @@
 ---
 title: Sample2 topic - German
 permalink: sample2.html
-sidebar: generic_de
+sidebar: generic_en_de
 ---
 
 {% assign sidebar = site.data.generic_ja %}

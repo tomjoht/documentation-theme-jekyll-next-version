@@ -1,0 +1,25 @@
+<p>The following pages are tagged with <b>{{page.tag_name}}</b>.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Excerpt</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% assign thisTag = page.tag_name %}
+    {% for collection in site.collections %}
+        {% for page in collection.docs %}
+           {% for tag in page.tags %}
+                {% if tag == thisTag %}
+                    <tr>
+                        <td><a href="{{ page.url | remove: "/" }}">{{page.title}}</a></td>
+                        <td>{{ page.content | truncatewords: 50 | strip_html }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+    </tbody>
+</table>

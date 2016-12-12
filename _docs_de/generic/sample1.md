@@ -1,7 +1,7 @@
 ---
 title: Sample 1 - German
 permalink: sample1.html
-sidebar: generic_de
+sidebar: generic_en_de
 ---
 {{page.sidebar}}
 {{doc_en.sidebar}}

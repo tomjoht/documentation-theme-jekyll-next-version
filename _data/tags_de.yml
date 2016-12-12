@@ -1,0 +1,28 @@
+sidebarTitle: Tags - German
+
+folders:
+- title: Documentation tags - German
+  folderitems:
+  - title: Getting started - German
+    url: /tag-getting-started.html
+
+  - title: Content types - German
+    url: /tag-content-types.html
+
+  - title: Navigation - German
+    url: /tag-navigation.html
+
+  - title: Formatting - German
+    url: /tag-formatting.html
+
+  - title: Publishing - German
+    url: /tag-publishing.html
+
+  - title: Single-sourcing - German
+    url: /tag-single-sourcing.html
+
+  - title: Collaboration - German
+    url: /tag-collaboration.html
+
+  - title: Troubleshooting - German
+    url: /tag-troubleshooting.html

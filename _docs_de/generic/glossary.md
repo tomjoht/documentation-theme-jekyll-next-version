@@ -1,6 +1,6 @@
 ---
 title: Glossary - German
 permalink: glossary.html
-sidebar: generic
+sidebar: generic_en
 language: ja
 ---

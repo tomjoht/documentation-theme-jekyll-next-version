@@ -1,0 +1,68 @@
+language: english
+
+# Displays as site title on top nav bar and on site metadata
+title: Jekyll Documentation theme
+
+# Displays as site description meta
+description: Documentation theme for Jekyll websites
+
+# Link to home
+url: /
+
+# link to github repo
+github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
+github_edit_button_text: Edit me
+
+minitoc_title: Table of Contents
+
+port: 4000
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  docs_en:
+    output: true
+  tags_en:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "docs_en"
+    values:
+      layout: "default"
+      topnav: topnav_en
+  -
+    scope:
+      path: ""
+      type: "tags_en"
+    values:
+      layout: "default"
+      topnav: topnav_en
+      sidebar: tags_en
+      toc: false
+      github_button: false
+      tags: false
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - index_de.md
+  - index_ja.md
+
+search_placeholder: Search ...
+tag_name: Tags

@@ -1,7 +1,7 @@
 ---
 title: Subsublevel 1 - German
 permalink: subsublevel1.html
-sidebar: generic_de
+sidebar: generic_en_de
 ---
 
 This is sublevel 1 in German.

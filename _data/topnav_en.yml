@@ -1,0 +1,55 @@
+## Topnav single links
+## if you want to list an external url, use url instead of url. the theme will apply a different link base.
+navbar_singleitems:
+- items:
+    - title: News
+      url: /news
+
+#Topnav dropdowns
+navbar_dropdowns:
+- folders:
+    - title: Jekyll Resources
+      folderitems:
+        - title: Github Repo
+          url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+        - title: Jekyll Talk
+          url: https://talk.jekyllrb.com
+        - title: Jekyll documentation
+          url: http://jekyllrb.com/docs/home/
+        - title: Jekyll on Stack Overflow
+          url: http://stackoverflow.com/questions/tagged/jekyll
+        - title: Jekyll on my blog
+          url: http://idratherbewriting.com/category-jekyll/
+    - title: Products
+      folderitems:
+        - title: Jekyll Documentation Theme
+          url: /mydoc_introduction.html
+        - title: Product 1
+          url: /p1_landing_page.html
+        - title: Product 2
+          url: /p2_landing_page.html
+    - title: Tags
+      folderitems:
+        - title: Getting started
+          url: /tag-getting-started.html
+
+        - title: Content types
+          url: /tag-content-types.html
+
+        - title: Navigation
+          url: /tag-navigation.html
+
+        - title: Formatting
+          url: /tag-formatting.html
+
+        - title: Publishing
+          url: /tag-publishing.html
+
+        - title: Single-sourcing
+          url: /tag-single-sourcing.html
+
+        - title: Collaboration
+          url: /tag-collaboration.html
+
+        - title: Troubleshooting
+          url: /tag-troubleshooting.html

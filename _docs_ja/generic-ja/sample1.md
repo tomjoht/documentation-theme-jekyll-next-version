@@ -1,7 +1,7 @@
 ---
 title: Sample 1 - Japanese
 permalink: sample1.html
-sidebar: generic_ja
+sidebar: generic_en_ja
 ---
 {{page.sidebar}}
 {{doc_en.sidebar}}

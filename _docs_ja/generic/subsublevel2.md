@@ -1,7 +1,7 @@
 ---
 title: Subsublevel 2 - Japanese
 permalink: subsublevel2.html
-sidebar: generic_ja
+sidebar: generic_en_ja
 ---
 
 This is sublevel 2. 

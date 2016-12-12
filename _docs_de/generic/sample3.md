@@ -1,7 +1,7 @@
 ---
 title: Sample3 topic - German
 permalink: sample3.html
-sidebar: generic_de
+sidebar: generic_en_de
 ---
 
 hello
