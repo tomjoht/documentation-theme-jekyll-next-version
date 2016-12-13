@@ -1,7 +1,7 @@
 ---
 title: Sublevel3 - Japanese
 permalink: sublevel3.html
-sidebar: generic_en_ja
+sidebar: generic_ja
 ---
 
 ## Section 1

@@ -1,7 +1,7 @@
 ---
 title: Sample2 topic
 permalink: sample2.html
-sidebar: generic_en
+sidebar: generic
 tags: [getting-started, formatting]
 ---
 

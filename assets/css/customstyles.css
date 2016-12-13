@@ -389,6 +389,10 @@ figcaption {
 div.tags {
     margin: 15px 0px;
 }
+.label {
+    border-radius: .25em;
+    margin-right: 5px;
+}
 span.projectTitle {
     font-family: Arial;
     font-weight: bold;

@@ -1,7 +1,7 @@
 ---
 title: Building Robust Sidebar Navigation
 permalink: building-robust-navigation.md
-sidebar: generic_en
+sidebar: generic
 ---
 
 

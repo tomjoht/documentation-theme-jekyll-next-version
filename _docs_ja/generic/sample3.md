@@ -1,7 +1,7 @@
 ---
 title: Sample3 topic - Japanese
 permalink: sample3.html
-sidebar: generic_en_ja
+sidebar: generic_ja
 ---
 
 hello

@@ -1,7 +1,7 @@
 ---
 title: Next version of documentation theme for Jekyll - Japanese
 permalink: index.html
-sidebar: generic_en_ja
+sidebar: generic_ja
 topnav: topnav_ja
 ---
 

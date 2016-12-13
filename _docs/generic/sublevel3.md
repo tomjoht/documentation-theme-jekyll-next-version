@@ -1,7 +1,7 @@
 ---
 title: Sublevel3
 permalink: sublevel3.html
-sidebar: generic_en
+sidebar: generic
 tags: [getting-started, troubleshooting, formatting]
 ---
 

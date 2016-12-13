@@ -1,7 +1,7 @@
 ---
 title: Sublevel3 - German
 permalink: sublevel3.html
-sidebar: generic_en_de
+sidebar: generic_de
 ---
 
 ## Section 1

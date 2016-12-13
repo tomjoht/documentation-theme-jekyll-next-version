@@ -1,0 +1,5 @@
+<div class="tags">
+{% for tag in page.tags %}
+<a href="{{ "tag-" | append: tag | append: ".html" }}"><span class="label label-primary">{{page.tag_name}}{{tag}}</span></a>
+{% endfor %}
+</div>

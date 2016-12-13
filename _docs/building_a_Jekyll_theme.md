@@ -1,7 +1,7 @@
 ---
 title: Create a Jekyll Documentation Theme from an Existing HTML Template
 permalink: building-a-jekyll-theme.html
-sidebar: generic_en
+sidebar: generic
 ---
 
 ## Introduction

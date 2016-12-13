@@ -3,7 +3,7 @@ title: Building navigation
 tags: [formatting]
 keywords: search
 summary: "."
-sidebar: generic_en
+sidebar: generic
 permalink: building-navigation.html
 sidebar: toc
 ---

@@ -1,7 +1,7 @@
 ---
 title: Sample 1 - German
 permalink: mytest.html
-sidebar: generic_en_de
+sidebar: generic_de
 ---
 page.sidebar: {{page.sidebar}} <br/>
 doc_en.sidebar: {{doc_en.sidebar}}

@@ -1,7 +1,7 @@
 ---
 title: Next version of documentation theme for Jekyll
 permalink: index.html
-sidebar: generic_en
+sidebar: generic
 topnav: topnav_en
 ---
 

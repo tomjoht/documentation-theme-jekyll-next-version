@@ -26,9 +26,9 @@ kramdown:
  syntax_highlighter: rouge
 
 collections:
-  docs_en:
+  docs:
     output: true
-  tags_en:
+  tags:
     output: true
 
 defaults:
@@ -41,21 +41,20 @@ defaults:
   -
     scope:
       path: ""
-      type: "docs_en"
+      type: "docs"
     values:
       layout: "default"
       topnav: topnav_en
   -
     scope:
       path: ""
-      type: "tags_en"
+      type: "tags"
     values:
       layout: "default"
       topnav: topnav_en
-      sidebar: tags_en
+      sidebar: tags
       toc: false
       github_button: false
-      tags: false
 
 
 exclude:
