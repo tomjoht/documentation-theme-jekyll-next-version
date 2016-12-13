@@ -64,7 +64,7 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - index_en.md
+  - index.md
   - index_de.md
 
 
