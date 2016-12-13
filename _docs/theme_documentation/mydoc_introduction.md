@@ -1,6 +1,6 @@
 ---
 title: Introduction
-sidebar: mydoc_sidebar
+sidebar: themeinstructions
 permalink: mydoc_introduction.html
 folder: mydoc
 ---

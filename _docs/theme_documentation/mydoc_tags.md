@@ -5,7 +5,7 @@ tags: [navigation]
 last_updated: July 16, 2016
 keywords: tags, navigation, buttons, links, association
 summary: "Tags provide another means of navigation for your content. Unlike the table of contents, tags can show the content in a variety of arrangements and groupings. Implementing tags in this Jekyll theme is somewhat of a manual process."
-sidebar: mydoc_sidebar
+sidebar: themeinstructions
 permalink: mydoc_tags.html
 folder: mydoc
 ---
@@ -63,7 +63,7 @@ title: "Collaboration pages"
 tagName: collaboration
 search: exclude
 permalink: tag_collaboration.html
-sidebar: mydoc_sidebar
+sidebar: themeinstructions
 ---
 {% include taglogic.html %}
    ```

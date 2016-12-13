@@ -4,7 +4,7 @@ summary: "This is the fourth post in the series."
 series: "ACME series"
 weight: 4
 last_updated: July 3, 2016
-sidebar: mydoc_sidebar
+sidebar: themeinstructions
 permalink: mydoc_seriesdemo4.html
 folder: mydoc
 ---

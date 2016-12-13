@@ -1,7 +1,7 @@
 ---
 title: Installing Bundler
 published: false
-sidebar: mydoc_sidebar
+sidebar: themeinstructions
 permalink: mydoc_installing_bundler.html
 folder: mydoc
 ---
