@@ -44,15 +44,16 @@ defaults:
       type: "docs"
     values:
       layout: "default"
-      topnav: topnav_en
+      topnav: topnav
+      tag_list: taglist
   -
     scope:
       path: ""
       type: "tags"
     values:
       layout: "default"
-      topnav: topnav_en
-      sidebar: tags
+      topnav: topnav
+      sidebar: taglist
       toc: false
       github_button: false
 

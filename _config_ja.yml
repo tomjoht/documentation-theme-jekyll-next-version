@@ -49,6 +49,7 @@ defaults:
     values:
       layout: "default"
       topnav: topnav_ja
+      tag_list: taglist_ja
   -
     scope:
       path: ""
@@ -56,10 +57,10 @@ defaults:
     values:
       layout: "default"
       topnav: topnav_ja
-      sidebar: tags_ja
+      sidebar: taglist_ja
       toc: false
       github_button: false
-      
+
 exclude:
   - Gemfile
   - Gemfile.lock

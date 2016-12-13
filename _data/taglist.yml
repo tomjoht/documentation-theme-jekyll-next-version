@@ -3,26 +3,26 @@ sidebarTitle: Tags
 folders:
 - title: Documentation tags
   folderitems:
-  - title: Getting started
+  - title: getting-started
     url: /tag-getting-started.html
 
-  - title: Content types
+  - title: content-types
     url: /tag-content-types.html
 
-  - title: Navigation
+  - title: navigation
     url: /tag-navigation.html
 
-  - title: Formatting
+  - title: formatting
     url: /tag-formatting.html
 
-  - title: Publishing
+  - title: publishing
     url: /tag-publishing.html
 
-  - title: Single-sourcing
+  - title: single-sourcing
     url: /tag-single-sourcing.html
 
-  - title: Collaboration
+  - title: collaboration
     url: /tag-collaboration.html
 
-  - title: Troubleshooting
+  - title: troubleshooting
     url: /tag-troubleshooting.html

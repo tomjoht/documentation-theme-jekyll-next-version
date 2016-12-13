@@ -2,7 +2,7 @@
 title: Next version of documentation theme for Jekyll
 permalink: index.html
 sidebar: generic
-topnav: topnav_en
+topnav: topnav
 ---
 
 I'm working on a new version of the Jekyll documentation theme here. This theme is currently under development. If you want to start using the previous theme, see [this repo](https://github.com/tomjohnson1492/documentation-theme-jekyll).

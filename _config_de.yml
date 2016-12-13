@@ -49,6 +49,7 @@ defaults:
     values:
       layout: "default"
       topnav: topnav_de
+      tag_list: taglist_de
   -
     scope:
       path: ""
@@ -56,7 +57,7 @@ defaults:
     values:
       layout: "default"
       topnav: topnav_de
-      sidebar: tags_de
+      sidebar: taglist_de
       toc: false
       github_button: false
 
