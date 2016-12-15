@@ -5,9 +5,12 @@ sidebar: generic
 topnav: topnav
 ---
 
-I'm working on a new version of the Jekyll documentation theme here. This theme is currently under development. If you want to start using the previous theme, see [this repo](https://github.com/tomjohnson1492/documentation-theme-jekyll).
+This is the English homepage.
+sidebar: {{page.sidebar}}
 
-I'm targeting the end of the year to finish this new version.
+topnav: {{page.topnav}}
+
+tag_group: {{page.tag_group}}
 
 
 {% comment %}

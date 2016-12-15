@@ -4,25 +4,33 @@ folders:
 - title: Documentation tags - German
   folderitems:
   - title: Getting started - German
+    tag_name: getting-started
     url: /tag-getting-started.html
 
   - title: Content types - German
+    tag_name: content-types
     url: /tag-content-types.html
 
   - title: Navigation - German
+    tag_name: navigation
     url: /tag-navigation.html
 
   - title: Formatting - German
+    tag_name: formatting
     url: /tag-formatting.html
 
   - title: Publishing - German
+    tag_name: publishing
     url: /tag-publishing.html
 
   - title: Single-sourcing - German
+    tag_name: single-sourcing
     url: /tag-single-sourcing.html
 
   - title: Collaboration - German
+    tag_name: collaboration
     url: /tag-collaboration.html
 
   - title: Troubleshooting - German
+    tag_name: troubleshooting
     url: /tag-troubleshooting.html

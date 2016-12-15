@@ -1,23 +1,14 @@
 language: german
 
-# Displays as site title on top nav bar and on site metadata
-title: Jekyll Documentation theme - DE
-
-# Displays as site description meta
-description: Documentation theme for Jekyll websites - DE
-
 # Link to home
 url: /
 
 # link to github repo
 github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
-github_edit_button_text: bearbeiten
 
 top_navbar_color: inverse
 #blue --> use "inverse"
 #black --> use "default"
-
-minitoc_title: Inhaltsverzeichnis
 
 port: 4000
 highlighter: rouge
@@ -42,6 +33,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+      tag_group: taglist_de
   -
     scope:
       path: ""
@@ -49,13 +41,13 @@ defaults:
     values:
       layout: "default"
       topnav: topnav_de
-      tag_list: taglist_de
+      tag_group: taglist_de
   -
     scope:
       path: ""
-      type: "tags_de"
+      type: tags_de
     values:
-      layout: "default"
+      layout: default
       topnav: topnav_de
       sidebar: taglist_de
       toc: false
@@ -64,8 +56,22 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - index.md
+  - index_en.md
   - index_ja.md
 
+########## UI text ###############
+
+# Displays as site title on top nav bar and on site metadata
+title: Jekyll Dokumentation Thema
+# Displays as site description meta
+description: Dokumentationsthema für Jekyll-Webseiten
 search_placeholder: Suche ...
-tag_name: Tags
+minitoc_title: Inhaltsverzeichnis
+
+tag_terms:
+  product: Produkt
+  page: Seite
+  excerpt: Auszug
+  tag_page_intro: Die folgenden Seiten sind markiert
+
+github_edit_button_text: Bearbeiten Sie diese Seite

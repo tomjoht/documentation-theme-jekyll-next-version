@@ -46,8 +46,11 @@ folders:
 
 - title: Another folder level
   folderitems:
+  - title: Home
+    url: /index.html
+
   - title: Thing 1
-    url: /thing.html
+    url: /thing1.html
 
   - title: Thing 2
     url: /thing2.html

@@ -1,10 +1,10 @@
 <div class="tags">
 {% for tag in page.tags %}
-{% assign doctags = site.data[page.tag_list] %}
+{% assign doctags = site.data[page.tag_group] %}
 {% for folder in doctags.folders %}
 {% for folderitem in folder.folderitems %}
-{% if folderitem.title == tag %}
-<a href="{{ "tag-" | append: tag | append: ".html" }}"><span class="label label-primary">{{tag}}</span></a>
+{% if folderitem.tag_name == tag %}
+<a href="{{ "tag-" | append: tag | append: ".html" }}"><span class="label label-primary">{{folderitem.title}}</span></a>
 {% endif %}
 {% endfor %}
 {% endfor %}

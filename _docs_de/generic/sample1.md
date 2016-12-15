@@ -2,12 +2,8 @@
 title: Sample 1 - German
 permalink: sample1.html
 sidebar: generic_de
+product: Generic
 ---
-{{page.sidebar}}
-{{doc_en.sidebar}}
-
-assign sidebar = site.data.generic_ja
-sidebar: {{sidebar}}
 
 This is some content...
 

@@ -1,11 +1,5 @@
 language: japanese
 
-# Displays as site title on top nav bar and on site metadata
-title: Jekyll Documentation theme - JA
-
-# Displays as site description meta
-description: Documentation theme for Jekyll websites - JA
-
 # Link to home
 url: /
 
@@ -16,8 +10,6 @@ github_edit_button_text: 編集
 top_navbar_color: inverse
 #blue --> use "inverse"
 #black --> use "default"
-
-minitoc_title: 目次
 
 port: 4000
 highlighter: rouge
@@ -42,6 +34,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+      tag_group: taglist
   -
     scope:
       path: ""
@@ -49,7 +42,7 @@ defaults:
     values:
       layout: "default"
       topnav: topnav_ja
-      tag_list: taglist_ja
+      tag_group: taglist_ja
   -
     scope:
       path: ""
@@ -64,9 +57,23 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - index.md
+  - index_en.md
   - index_de.md
 
 
+########## UI text ###############
+
+# Displays as site title on top nav bar and on site metadata
+title: Jekyllドキュメンテーションテーマ
+# Displays as site description meta
+description: ジキルウェブサイトのドキュメントテーマ
 search_placeholder: サーチ ...
-tag_name: タグ
+minitoc_title: 目次
+
+tag_terms:
+  product: 製品
+  page: ページ
+  excerpt: 抜粋
+  tag_page_intro: 以下のページにはタグが付けられています
+
+github_edit_button_text: 私を編集する

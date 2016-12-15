@@ -2,6 +2,8 @@
 title: Sublevel3 - German
 permalink: sublevel3.html
 sidebar: generic_de
+product: Generic
+tags: [getting-started, troubleshooting, formatting]
 ---
 
 ## Section 1

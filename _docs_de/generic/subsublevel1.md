@@ -2,6 +2,7 @@
 title: Subsublevel 1 - German
 permalink: subsublevel1.html
 sidebar: generic_de
+product: Generic
 ---
 
 This is sublevel 1 in German.

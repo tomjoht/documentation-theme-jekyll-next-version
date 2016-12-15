@@ -2,6 +2,8 @@
 title: Sublevel3 - Japanese
 permalink: sublevel3.html
 sidebar: generic_ja
+tags: [single-sourcing, collaboration]
+product: Generic
 ---
 
 ## Section 1

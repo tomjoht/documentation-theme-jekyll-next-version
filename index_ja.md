@@ -1,5 +1,5 @@
 ---
-title: Next version of documentation theme for Jekyll - Japanese
+title: Jekyllのドキュメンテーションテーマの次のバージョン - 日本語
 permalink: index.html
 sidebar: generic_ja
 topnav: topnav_ja

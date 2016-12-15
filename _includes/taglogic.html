@@ -1,21 +1,23 @@
-<p>The following pages are tagged with <b>{{page.tag_name}}</b>.</p>
+<p>{{site.tag_terms.tag_page_intro}} <b>{{page.tag_display}}</b>.</p>
 
 <table>
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Excerpt</th>
+            <th>{{site.tag_terms.product}}</th>
+            <th>{{site.tag_terms.page}}</th>
+            <th>{{site.tag_terms.excerpt}}</th>
         </tr>
     </thead>
     <tbody>
     {% assign thisTag = page.tag_name %}
     {% for collection in site.collections %}
-        {% for page in collection.docs %}
-           {% for tag in page.tags %}
+        {% for doc in collection.docs %}
+           {% for tag in doc.tags %}
                 {% if tag == thisTag %}
                     <tr>
-                        <td><a href="{{ page.url | remove: "/" }}">{{page.title}}</a></td>
-                        <td>{{ page.content | truncatewords: 50 | strip_html }}</td>
+                        <td>{{doc.product}}</td>
+                        <td><a href="{{ doc.url | remove: "/" }}">{{doc.title}}</a></td>
+                        <td>{{ doc.content | truncatewords: 50 | strip_html }}</td>
                     </tr>
                 {% endif %}
             {% endfor %}

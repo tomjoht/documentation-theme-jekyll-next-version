@@ -1,28 +1,36 @@
 sidebarTitle: Tags - Japanese
 
 folders:
-- title: Documentation tags - Japanese
+- title: Documentation tags
   folderitems:
   - title: Getting started - Japanese
+    tag_name: getting-started
     url: /tag-getting-started.html
 
   - title: Content types - Japanese
+    tag_name: content-types
     url: /tag-content-types.html
 
   - title: Navigation - Japanese
+    tag_name: navigation
     url: /tag-navigation.html
 
   - title: Formatting - Japanese
+    tag_name: formatting
     url: /tag-formatting.html
 
   - title: Publishing - Japanese
+    tag_name: publishing
     url: /tag-publishing.html
 
   - title: Single-sourcing - Japanese
+    tag_name: single-sourcing
     url: /tag-single-sourcing.html
 
   - title: Collaboration - Japanese
+    tag_name: collaboration
     url: /tag-collaboration.html
 
   - title: Troubleshooting - Japanese
+    tag_name: troubleshooting
     url: /tag-troubleshooting.html

@@ -3,6 +3,7 @@ title: Sample 1
 permalink: sample1.html
 sidebar: generic
 tags: [getting-started, formatting]
+product: Generic
 ---
 
 

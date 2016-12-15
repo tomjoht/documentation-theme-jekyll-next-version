@@ -1,1 +1,1 @@
-bundle exec jekyll serve --config _config_en.yml --destination _site
+bundle exec jekyll serve

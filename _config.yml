@@ -1,19 +1,10 @@
 language: english
 
-# Displays as site title on top nav bar and on site metadata
-title: Jekyll Documentation theme
-
-# Displays as site description meta
-description: Documentation theme for Jekyll websites
-
 # Link to home
 url: /
 
 # link to github repo
 github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
-github_edit_button_text: Edit me
-
-minitoc_title: Table of Contents
 
 port: 4000
 highlighter: rouge
@@ -38,6 +29,8 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+      topnav: topnav
+      tag_group: taglist
   -
     scope:
       path: ""
@@ -45,7 +38,7 @@ defaults:
     values:
       layout: "default"
       topnav: topnav
-      tag_list: taglist
+      tag_group: taglist
   -
     scope:
       path: ""
@@ -57,6 +50,22 @@ defaults:
       toc: false
       github_button: false
 
+algolia:
+    application_id: 'HXUBJERYYB'
+    index_name:     'documentation-theme-jekyll'
+    record_css_selector: 'p,ul'
+    settings:
+    attributesToIndex:
+      - title
+      - h1
+      - h2
+      - h3
+      - h4
+      - h5
+      - h6
+      - unordered(text)
+      - unordered(tags)
+      - summary
 
 exclude:
   - Gemfile
@@ -64,5 +73,22 @@ exclude:
   - index_de.md
   - index_ja.md
 
+gems:
+  - algoliasearch-jekyll
+
+########## UI text ###############
+
+# Displays as site title on top nav bar and on site metadata
+title: Jekyll Documentation theme
+# Displays as site description meta
+description: Documentation theme for Jekyll websites
 search_placeholder: Search ...
-tag_name: Tags
+minitoc_title: Table of Contents
+github_edit_button_text: Edit me
+
+
+tag_terms:
+  product: Product
+  page: Page
+  excerpt: Excerpt
+  tag_page_intro: The following pages are tagged with
