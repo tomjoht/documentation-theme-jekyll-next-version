@@ -9,8 +9,9 @@ github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll
 port: 4000
 highlighter: rouge
 
-highlighting_css: monokai 
+highlighting_css: monokai
 # options: "monokai" (black), "syntax" (white)
+navbar_style: navbar
 
 markdown: kramdown
 kramdown:
