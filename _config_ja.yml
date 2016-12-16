@@ -11,6 +11,9 @@ top_navbar_color: inverse
 #blue --> use "inverse"
 #black --> use "default"
 
+highlighting_css: monokai
+# options: "monokai" (black), "syntax" (white)
+
 port: 4000
 highlighter: rouge
 
