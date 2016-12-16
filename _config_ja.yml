@@ -31,24 +31,24 @@ defaults:
   -
     scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "default"
+      layout: default
       tag_group: taglist
   -
     scope:
       path: ""
-      type: "docs_ja"
+      type: docs_ja
     values:
-      layout: "default"
+      layout: default
       topnav: topnav_ja
       tag_group: taglist_ja
   -
     scope:
       path: ""
-      type: "tags_ja"
+      type: tags_ja
     values:
-      layout: "default"
+      layout: default
       topnav: topnav_ja
       sidebar: taglist_ja
       toc: false
@@ -63,17 +63,14 @@ exclude:
 
 ########## UI text ###############
 
-# Displays as site title on top nav bar and on site metadata
-title: Jekyllドキュメンテーションテーマ
-# Displays as site description meta
-description: ジキルウェブサイトのドキュメントテーマ
-search_placeholder: サーチ ...
-minitoc_title: 目次
-
-tag_terms:
-  product: 製品
-  page: ページ
-  excerpt: 抜粋
-  tag_page_intro: 以下のページにはタグが付けられています
-
-github_edit_button_text: 私を編集する
+uistring:
+    title: Jekyllドキュメンテーションテーマ # Displays as site title on top nav bar and on site metadata
+    description: ジキルウェブサイトのドキュメントテーマ # Displays as site description meta
+    search_placeholder: サーチ ...
+    github_edit_button_text: 私を編集する
+    minitoc_title: 目次
+    tag_terms:
+      product: 製品
+      page: ページ
+      excerpt: 抜粋
+      tag_page_intro: 以下のページにはタグが付けられています

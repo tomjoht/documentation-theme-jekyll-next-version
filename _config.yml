@@ -26,25 +26,25 @@ defaults:
   -
     scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "default"
+      layout: default
       topnav: topnav
       tag_group: taglist
   -
     scope:
       path: ""
-      type: "docs"
+      type: docs
     values:
-      layout: "default"
+      layout: default
       topnav: topnav
       tag_group: taglist
   -
     scope:
       path: ""
-      type: "tags"
+      type: tags
     values:
-      layout: "default"
+      layout: default
       topnav: topnav
       sidebar: taglist
       toc: false
@@ -78,17 +78,15 @@ gems:
 
 ########## UI text ###############
 
-# Displays as site title on top nav bar and on site metadata
-title: Jekyll Documentation theme
-# Displays as site description meta
-description: Documentation theme for Jekyll websites
-search_placeholder: Search ...
-minitoc_title: Table of Contents
-github_edit_button_text: Edit me
 
-
-tag_terms:
-  product: Product
-  page: Page
-  excerpt: Excerpt
-  tag_page_intro: The following pages are tagged with
+uistring:
+    title: Jekyll Documentation theme # Displays as site title on top nav bar and on site metadata
+    description: Documentation theme for Jekyll websites  # Displays as site description meta
+    search_placeholder: Search ...
+    minitoc_title: Table of Contents
+    github_edit_button_text: Edit me
+    tag_terms:
+      product: Product
+      page: Page
+      excerpt: Excerpt
+      tag_page_intro: The following pages are tagged with

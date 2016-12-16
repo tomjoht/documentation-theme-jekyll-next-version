@@ -402,3 +402,10 @@ span.projectTitle {
 ul#entrypages li {
     font-size: 12px;
 }
+
+/*top nav */
+span.sidebarToggle {
+font: normal normal normal 10px/.6 FontAwesome;
+font-size: 2.3rem;
+color: white;
+}
