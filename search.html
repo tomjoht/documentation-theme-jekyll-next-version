@@ -5,6 +5,17 @@ toc: false
 github_button: false
 ---
 
+{% for collection in site.collections %}
+    {% for doc in collection.docs %}
+"{{ doc.url | slugify }}": {
+  "title": "{{ doc.title | xml_escape }}",
+  "tags": "{{ doc.tags | xml_escape }}",
+  "content": {{ doc.content | strip_html | strip_newlines | jsonify }},
+  "url": "{{ doc.url | xml_escape }}"
+}
+{% unless forloop.last %},{% endunless %}
+{% endfor %}{% endfor %}
+
 <div class="searchFormDisplay">
 <form action="search.html" method="get">
   <label for="search-box">Search</label>
