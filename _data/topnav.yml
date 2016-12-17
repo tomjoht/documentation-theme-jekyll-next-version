@@ -2,32 +2,19 @@
 ## if you want to list an external url, use url instead of url. the theme will apply a different link base.
 navbar_singleitems:
 - items:
-    - title: News
-      url: /news
+    - title: Search
+      url: /search.html
 
 #Topnav dropdowns
 navbar_dropdowns:
 - folders:
-    - title: Jekyll Resources
-      folderitems:
-        - title: Github Repo
-          url: https://github.com/tomjohnson1492/documentation-theme-jekyll
-        - title: Jekyll Talk
-          url: https://talk.jekyllrb.com
-        - title: Jekyll documentation
-          url: http://jekyllrb.com/docs/home/
-        - title: Jekyll on Stack Overflow
-          url: http://stackoverflow.com/questions/tagged/jekyll
-        - title: Jekyll on my blog
-          url: http://idratherbewriting.com/category-jekyll/
+
     - title: Products
       folderitems:
-        - title: Jekyll Documentation Theme
+        - title: Theme instructions
           url: /mydoc_introduction.html
-        - title: Product 1
-          url: /p1_landing_page.html
-        - title: Product 2
-          url: /p2_landing_page.html
+        - title: Generic
+          url: /sample1.html
     - title: Tags
       folderitems:
         - title: Getting started
@@ -53,3 +40,15 @@ navbar_dropdowns:
 
         - title: Troubleshooting
           url: /tag-troubleshooting.html
+    - title: Other Resources
+      folderitems:
+        - title: Github Repo
+          url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+        - title: Jekyll Talk
+          url: https://talk.jekyllrb.com
+        - title: Jekyll documentation
+          url: http://jekyllrb.com/docs/home/
+        - title: Jekyll on Stack Overflow
+          url: http://stackoverflow.com/questions/tagged/jekyll
+        - title: Jekyll on my blog
+          url: http://idratherbewriting.com/category-jekyll/

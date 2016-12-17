@@ -1,3 +1,4 @@
+exclude: [_theme_documentation]
 language: english
 
 # Link to home
@@ -11,7 +12,10 @@ highlighter: rouge
 
 highlighting_css: monokai
 # options: "monokai" (black), "syntax" (white)
-navbar_style: navbar
+navbar_style: amazon
+navbar_logo: samplelogo.png
+
+image_path: /docs/images/
 
 markdown: kramdown
 kramdown:
@@ -53,6 +57,7 @@ defaults:
       sidebar: taglist
       toc: false
       github_button: false
+      search: false
 
 algolia:
     application_id: 'HXUBJERYYB'
@@ -86,9 +91,12 @@ gems:
 uistring:
     title: Jekyll Documentation theme # Displays as site title on top nav bar and on site metadata
     description: Documentation theme for Jekyll websites  # Displays as site description meta
-    search_placeholder: Search ...
+    search_placeholder_global: Global Search ...
+    search_placeholder_product: Product Search ...
     minitoc_title: Table of Contents
     github_edit_button_text: Edit me
+    search_results_page_title: Search results
+    search_no_results_found: No results found.
     tag_terms:
       product: Product
       page: Page

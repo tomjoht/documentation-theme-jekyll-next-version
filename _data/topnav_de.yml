@@ -2,8 +2,8 @@
 ## if you want to list an external url, use url instead of url. the theme will apply a different link base.
 navbar_singleitems:
 - items:
-    - title: News - DE
-      url: /news
+    - title: Search - DE
+      url: /search.html
 
 #Topnav dropdowns
 navbar_dropdowns:

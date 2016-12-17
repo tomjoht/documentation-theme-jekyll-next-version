@@ -9,10 +9,10 @@ folders:
   - title: Home
     url: /index.html
 
-  - title: Sample 1
+  - title: Sample 1 really long title that will wrap
     url: /sample1.html
 
-  - title: Sample 2
+  - title: Sample 2 really long title that will wrap even longer
     url: /sample2.html
 
   - title: Sample 3
@@ -57,6 +57,7 @@ folders:
 
   - title: Thing 3
     url: /thing3.html
+
 ###########################
 
 related_resources_title: Other Resources

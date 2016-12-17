@@ -13,6 +13,10 @@ top_navbar_color: inverse
 highlighting_css: monokai
 # options: "monokai" (black), "syntax" (white)
 
+image_path: /docs_de/images/
+navbar_style: amazon
+navbar_logo: samplelogo.png
+
 port: 4000
 highlighter: rouge
 
@@ -55,6 +59,7 @@ defaults:
       sidebar: taglist_de
       toc: false
       github_button: false
+      search: false
 
 exclude:
   - Gemfile
@@ -70,6 +75,9 @@ uistring:
     search_placeholder: Suche ...
     minitoc_title: Inhaltsverzeichnis
     github_edit_button_text: Bearbeiten Sie diese Seite
+    search_results_page_title: Suchergebnisse
+    search_placeholder_global: G Oba l Sayre rch ...
+    search_placeholder_product: P Rodzu ct Sayre rch ...
     tag_terms:
       product: Produkt
       page: Seite

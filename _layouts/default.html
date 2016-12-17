@@ -32,7 +32,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top affix">
         <div class="container topnavlinks">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -45,11 +45,18 @@
                     <span class="sr-only">Toggle sidebar</span>
                     <span class="sidebarToggle fa fa-columns fa-2x"></span>
                 </button>
-                <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> {{site.uistring.title}}</span></a>
+                    {% if site.navbar_logo %}
+                    <a class="navbar-brand" href="index.html">
+                    <img class="navbar-logo" src="{{site.image_path}}{{site.navbar_logo}}"/>
+                    {% else %}
+                    <a class="fa fa-home fa-lg navbar-brand" href="index.html">
+                    &nbsp;<span class="projectTitle"> {{site.uistring.title}}</span>
+                    {% endif %}
+                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-left">
                     <!-- entries without drop-downs appear here -->
                     {% assign topnav = site.data[page.topnav] %}
                     {% for entry in topnav.navbar_singleitems %}
@@ -83,12 +90,14 @@
                     </li>
                     {% endfor %}
                     {% endfor %}
+</ul>
+<ul class="nav navbar-nav navbar-right">
 
                     <li>
                         <!--start search-->
                         <div id="search-demo-container">
                  <form action="search.html" method="get">
-                <input type="text" id="search-input" placeholder="{{site.uistring.search_placeholder}}" name="query">
+                <input type="text" id="search-input" placeholder="{{site.uistring.search_placeholder_global}}" name="query">
                 </form>
                 </div>
                         <!--end search-->
@@ -114,7 +123,11 @@
 
             <!-- main area -->
             <div class="col-xs-12 col-sm-9">
+                {% if page.type == "search" %}
+                <h1>{{page.product}} {{site.uistring.search_results_page_title}}</h2>
+                  {% else %}
                 <h1>{{page.title}}</h1>
+                 {% endif %}
                 {% if page.tags %}{% include tags.html %} {% endif %}
                 {% unless page.github_button == false %} {% include github_button.html %}{% endunless %}
                 {% unless page.toc == false %} {% include toc.html %} {% endunless %}

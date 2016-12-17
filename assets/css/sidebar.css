@@ -16,6 +16,10 @@
     color: #666;
 }
 
+.docnav li a:active {
+    text-decoration: none;
+}
+
 .docnav li.level1 > a > span:after, .docnav li.level2 > a > span:after, .docnav li.level3 > a > span:after {
     content: '\f0fe'; /* plus */
     font-family: 'FontAwesome';
@@ -84,7 +88,6 @@ li.level1.open > ul > li.level1items.open > a:before, li.level2.open > ul > li.l
     font-weight: bold;
     color: #333333;
     display: block;
-    padding-bottom: 15px;
     padding-top: 60px;
 }
 
@@ -97,4 +100,15 @@ hr.resourceSeparator {
     border-width: 1px;
     color: black;
     max-width: 80%;
+}
+
+.docnav li a{
+  max-width: 240px;
+  line-height: 18px;
+display:table;
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
 }

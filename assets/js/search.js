@@ -7,13 +7,14 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<a href="' + item.url + '"><h4>' + item.title + '</h4></a>';
+        appendString += '<a href="' + item.url + '"><h4>' + item.title + ' <span class="productSubtitle">[' + item.product + ']</span></h4></a>';
         appendString += '<p>' + item.content.substring(0, 150) + '...</p>';
       }
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<li>No results found</li>';
+      // this is a hack for the inability to submit different language strings here
+      searchResults.innerHTML = '<span style="color: red"><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></span>';
     }
   }
 
@@ -40,8 +41,8 @@
     var idx = lunr(function () {
       this.field('id');
       this.field('title', { boost: 10 });
-      this.field('author');
-      this.field('category');
+      this.field('product');
+      this.field('tags');
       this.field('content');
     });
 
@@ -50,7 +51,8 @@
         'id': key,
         'title': window.store[key].title,
         'tags': window.store[key].tags,
-        'content': window.store[key].content
+        'content': window.store[key].content,
+        'product': window.store[key].product
       });
 
       var results = idx.search(searchTerm); // Get lunr to perform a search

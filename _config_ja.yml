@@ -14,6 +14,10 @@ top_navbar_color: inverse
 highlighting_css: monokai
 # options: "monokai" (black), "syntax" (white)
 
+image_path: /docs_ja/images/
+navbar_style: amazon
+navbar_logo: samplelogo.png
+
 port: 4000
 highlighter: rouge
 
@@ -56,6 +60,7 @@ defaults:
       sidebar: taglist_ja
       toc: false
       github_button: false
+      search: false
 
 exclude:
   - Gemfile
@@ -70,8 +75,11 @@ uistring:
     title: Jekyllドキュメンテーションテーマ # Displays as site title on top nav bar and on site metadata
     description: ジキルウェブサイトのドキュメントテーマ # Displays as site description meta
     search_placeholder: サーチ ...
+    search_placeholder_global: グローバル検索 ...
+    search_placeholder_product: 製品検索 ...
     github_edit_button_text: 私を編集する
     minitoc_title: 目次
+    search_results_page_title: の検索結果
     tag_terms:
       product: 製品
       page: ページ
