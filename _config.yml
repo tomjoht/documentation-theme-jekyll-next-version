@@ -12,7 +12,7 @@ highlighter: rouge
 
 highlighting_css: monokai
 # options: "monokai" (black), "syntax" (white)
-navbar_style: amazon
+navbar_style: lighttheme
 navbar_logo: samplelogo.png
 
 image_path: /docs/images/

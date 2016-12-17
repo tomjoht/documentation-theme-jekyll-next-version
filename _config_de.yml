@@ -14,7 +14,7 @@ highlighting_css: monokai
 # options: "monokai" (black), "syntax" (white)
 
 image_path: /docs_de/images/
-navbar_style: amazon
+navbar_style: lighttheme
 navbar_logo: samplelogo.png
 
 port: 4000
