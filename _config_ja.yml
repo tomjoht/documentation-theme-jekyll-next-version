@@ -6,6 +6,8 @@ url: /
 # link to github repo
 github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
 github_edit_button_text: 編集
+image_path: docs_ja/images/
+
 
 top_navbar_color: inverse
 #blue --> use "inverse"
@@ -16,7 +18,7 @@ highlighting_css: monokai
 
 image_path: /docs_ja/images/
 navbar_style: lighttheme
-navbar_logo: samplelogo.png
+navbar_logo: docs_ja/images/samplelogo.png
 
 port: 4000
 highlighter: rouge
