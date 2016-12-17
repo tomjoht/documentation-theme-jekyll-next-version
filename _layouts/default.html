@@ -14,18 +14,16 @@
 
 
     <!--stylesheets / link tags loaded here-->
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    <script src="assets/js/navgoco.jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="assets/js/customscripts.js"></script>
-
-    <link rel="stylesheet" href="assets/css/{{site.highlighting_css}}.css" />
     <link rel="stylesheet" href="assets/css/sidebar.css" />
     <link rel="stylesheet" href="assets/css/{{site.navbar_style}}.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/{{site.highlighting_css}}.css" />
     <link rel="stylesheet" href="assets/css/customstyles.css" />
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/navgoco.jquery.min.js"></script>
+
 </head>
 <body >
 <div class="page-container">
@@ -138,49 +136,34 @@
     </div><!--/.container-->
 </div><!--/.page-container-->
 
-<script>
-    // sandbox disable popups
-    if (window.self !== window.top && window.name!="view1") {;
-        window.alert = function(){/*disable alert*/};
-        window.confirm = function(){/*disable confirm*/};
-        window.prompt = function(){/*disable prompt*/};
-        window.open = function(){/*disable open*/};
-    }
-
-    // prevent href=# click jump
-    document.addEventListener("DOMContentLoaded", function() {
-        var links = document.getElementsByTagName("A");
-        for(var i=0; i < links.length; i++) {
-            if(links[i].href.indexOf('#')!=-1) {
-                links[i].addEventListener("click", function(e) {
-                    console.debug("prevent href=# click");
-                    if (this.hash) {
-                        if (this.hash=="#") {
-                            e.preventDefault();
-                            return false;
-                        }
-                        else {
-                            /*
-                             var el = document.getElementById(this.hash.replace(/#/, ""));
-                             if (el) {
-                             el.scrollIntoView(true);
-                             }
-                             */
-                        }
-                    }
-                    return false;
-                })
-            }
-        }
-    }, false);
-</script>
 
 <!--scripts loaded here-->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="{{ "assets/js/toc.js" }}"></script>
-<!-- AnchorJS is used under the MIT license. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/toc.js"></script>
+<script src="assets/js/anchor.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $("#docnavsidebar").navgoco({
+            caretHtml: '',
+            accordion: true,
+            openClass: 'open', // open
+            save: false, // leave false or nav highlighting doesn't work right
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+
+    });
+
+</script>
+<script src="assets/js/customscripts.js"></script>
 
 <script>
     $(document).ready(function() {

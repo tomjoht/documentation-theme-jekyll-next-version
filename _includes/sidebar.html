@@ -1,24 +1,4 @@
-<script>
-    $( document ).ready(function() {
-        $("#docnavsidebar").navgoco({
-            caretHtml: '',
-            accordion: true,
-            openClass: 'open', // open
-            save: false, // leave false or nav highlighting doesn't work right
-            cookie: {
-                name: 'navgoco',
-                expires: false,
-                path: '/'
-            },
-            slide: {
-                duration: 200,
-                easing: 'swing'
-            }
-        });
 
-    });
-
-</script>
 {% assign sidebar = site.data[page.sidebar] %}
 <div class="mydocsidebar">
 <div class="productTitle">{{sidebar.sidebarTitle}}</div>
@@ -115,5 +95,4 @@
     </li>
 </ul>
 </div>
-
 <script>$("li.open").parents('li').toggleClass("open");</script>
