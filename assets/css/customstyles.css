@@ -411,7 +411,7 @@ padding-bottom:0px;
 }
 
 img.navbar-logo {
-    /*max-width: 130px;*/
+    max-width: 160px;
     padding-bottom: 5px;
 }
 .navbar-brand {
@@ -424,6 +424,10 @@ img.navbar-logo {
     border-bottom: 1px solid #dedede;
     font-size: 16px;
     padding-top:10px;
+}
+
+.toggle-sidebar-button {
+  padding-bottom: 3px;
 }
 
 /* search adjustments */

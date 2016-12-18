@@ -116,6 +116,9 @@ hr.resourceSeparator {
   .docnav li a{
     max-width: 180px;
   }
+  .githubButton {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
