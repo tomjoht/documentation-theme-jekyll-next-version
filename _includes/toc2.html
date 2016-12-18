@@ -1,6 +1,6 @@
 {% unless page.toc == false %}
 <style>
-div#toc >ul::before, div#toc2 >ul::before {
+div#toc >ul::before {
     content: "{{site.uistring.minitoc_title}}";
 }
 </style>
@@ -8,10 +8,10 @@ div#toc >ul::before, div#toc2 >ul::before {
 $( document ).ready(function() {
   // Handler for .ready() called.
 
-$('#toc').toc({ minimumHeaders: 2, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+$('#toc2').toc({ minimumHeaders: 2, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
 
 /* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
+$('#toc2').on('click', 'a', function() {
   var target = $(this.getAttribute('href'))
     , scroll_target = target.offset().top
 
@@ -23,5 +23,5 @@ $('#toc').on('click', 'a', function() {
 </script>
 
 
-<div id="toc"></div>
+<div id="toc2"></div>
 {% endunless %}

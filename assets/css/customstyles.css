@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5 {
     width: 95%;
 }
 
+.toc-and-tags-main-column {
+  display: none;
+}
+
 /* collapsed sidebar styles */
 @media screen and (max-width: 767px) {
     .row-offcanvas {
@@ -56,6 +60,12 @@ h1, h2, h3, h4, h5 {
     #sidebar {
         padding-top:0;
     }
+    .affix.right-lane {
+      display: none;
+    }
+    .toc-and-tags-main-column {
+      display: block;
+    }
 }
 
 /* end bootswatch theme */
@@ -67,13 +77,13 @@ h1 {
 }
 
 /* mini toc styles start */
-div#toc ul li {
+div#toc ul li, div#toc2 ul li {
     margin: 8px 0px 8px 22px;
     font-size: 90%;
     list-style: square;
 }
 
-div#toc >ul::before {
+div#toc >ul::before, div#toc2 >ul::before {
     font-weight: 500;
     color: #555;
     text-align: center;
@@ -85,13 +95,14 @@ div#toc >ul::before {
     padding-left: 10px;
 }
 
-div#toc ul {
+div#toc ul, div#toc2 ul {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
     max-width: 300px;
     color: gray;
 }
+
 /* mini toc styles end */
 
 /* this part adds an icon after external links, using FontAwesome*/
@@ -132,11 +143,10 @@ a.editButton:hover {
 .githubButton{
     color: black;
     background-color: white;
-    float: right;
     border: 1px solid #dedede;
     padding: 7px;
     border-radius: 5px;
-    margin: 10px 0px 10px 10px;
+    margin: 20px 0px 10px 0px;
 }
 .githubButton:hover {
     background-color: #fefefe;
@@ -416,7 +426,6 @@ img.navbar-logo {
 }
 .navbar-brand {
     padding:0px;
-    height: 60px;
     margin-right: 30px;
 }
 
@@ -445,3 +454,22 @@ img.navbar-logo {
   color: #777;
 }
 /* end search */
+
+/* right column */
+
+.right-lane {
+  right: 0;
+  top: 150px;
+}
+
+.tags {
+  background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 300px;
+    color: #444;
+}
+
+.right-lane .tag-button {
+  margin: 10px 0px;
+}

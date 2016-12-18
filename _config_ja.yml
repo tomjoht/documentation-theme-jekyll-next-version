@@ -81,6 +81,7 @@ uistring:
     search_placeholder_product: 製品検索 ...
     github_edit_button_text: 私を編集する
     minitoc_title: 目次
+    tags_title: 日ごとに
     search_results_page_title: の検索結果
     tag_terms:
       product: 製品

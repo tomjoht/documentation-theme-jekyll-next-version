@@ -25,7 +25,7 @@
     <script src="assets/js/navgoco.jquery.min.js"></script>
 
 </head>
-<body >
+<body data-spy="scroll" data-target="#toc" data-offset="0">
 <div class="page-container">
 
 
@@ -120,18 +120,27 @@
             </div>
 
             <!-- main area -->
-            <div class="col-xs-12 col-sm-9">
+            <div class="col-xs-12 col-sm-7">
                 {% if page.type == "search" %}
                 <h1>{{page.product}} {{site.uistring.search_results_page_title}}</h2>
                   {% else %}
                 <h1>{{page.title}}</h1>
                  {% endif %}
-                {% if page.tags %}{% include tags.html %} {% endif %}
-                {% unless page.github_button == false %} {% include github_button.html %}{% endunless %}
-                {% unless page.toc == false %} {% include toc.html %} {% endunless %}
+                 <div class="toc-and-tags-main-column">
+                 {% include toc2.html %}
+               </div>
                 {{content}}
+                <div class="toc-and-tags-main-column">
+                {% include tags.html %}
+              </div>
+                {% unless page.github_button == false %} {% include github_button.html %}{% endunless %}
+
 
             </div><!-- /.col-xs-12 main -->
+
+            <div class="col-xs-12 col-sm-2 right-lane affix scrollspy">
+              {% include toc.html %}
+              {% include tags.html %}
         </div><!--/.row-->
     </div><!--/.container-->
 </div><!--/.page-container-->
