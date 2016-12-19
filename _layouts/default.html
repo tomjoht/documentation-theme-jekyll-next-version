@@ -25,12 +25,12 @@
     <script src="assets/js/navgoco.jquery.min.js"></script>
 
 </head>
-<body data-spy="scroll" data-target="#toc" data-offset="0">
+<body data-spy="scroll" data-target="nav#toc" data-offset="20">
 <div class="page-container">
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top affix">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container topnavlinks">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -126,11 +126,11 @@
                   {% else %}
                 <h1>{{page.title}}</h1>
                  {% endif %}
-                 <div class="toc-and-tags-main-column">
+                 <div class="toc-main-column">
                  {% include toc2.html %}
                </div>
                 {{content}}
-                <div class="toc-and-tags-main-column">
+                <div class="toc-main-column">
                 {% include tags.html %}
               </div>
                 {% unless page.github_button == false %} {% include github_button.html %}{% endunless %}
@@ -138,7 +138,7 @@
 
             </div><!-- /.col-xs-12 main -->
 
-            <div class="col-xs-12 col-sm-2 right-lane affix scrollspy">
+            <div class="col-xs-12 col-sm-2 right-lane">
               {% include toc.html %}
               {% include tags.html %}
         </div><!--/.row-->

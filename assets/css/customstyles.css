@@ -20,12 +20,17 @@ h1, h2, h3, h4, h5 {
 #sidebar {
     height: 100%;
     padding-right: 0;
+    overflow-y: auto;
 }
 #sidebar .nav {
     width: 95%;
 }
 
-.toc-and-tags-main-column {
+.toc-main-column {
+  display: none;
+}
+
+.tags-main-column {
   display: none;
 }
 
@@ -63,10 +68,17 @@ h1, h2, h3, h4, h5 {
     .affix.right-lane {
       display: none;
     }
-    .toc-and-tags-main-column {
+    .toc-main-column {
       display: block;
     }
+    .tags-main-column {
+      display: block;
+    }
+    .tag-button {
+      display: inline;
+    }
 }
+
 
 /* end bootswatch theme */
 
@@ -77,13 +89,13 @@ h1 {
 }
 
 /* mini toc styles start */
-div#toc ul li, div#toc2 ul li {
+nav#toc ul li, div#toc2 ul li {
     margin: 8px 0px 8px 22px;
     font-size: 90%;
     list-style: square;
 }
 
-div#toc >ul::before, div#toc2 >ul::before {
+nav#toc >ul::before, div#toc2 >ul::before {
     font-weight: 500;
     color: #555;
     text-align: center;
@@ -95,7 +107,7 @@ div#toc >ul::before, div#toc2 >ul::before {
     padding-left: 10px;
 }
 
-div#toc ul, div#toc2 ul {
+nav#toc ul, nav#toc2 ul {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
@@ -457,9 +469,15 @@ img.navbar-logo {
 
 /* right column */
 
+
 .right-lane {
   right: 0;
-  top: 150px;
+  top: 120px;
+  bottom:0;
+  position:fixed;
+  margin-right: 0px;
+  overflow: auto;
+  padding: 0px;
 }
 
 .tags {
@@ -472,4 +490,5 @@ img.navbar-logo {
 
 .right-lane .tag-button {
   margin: 10px 0px;
+  display: block;
 }

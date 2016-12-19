@@ -1,6 +1,8 @@
+<div class="inner">
+
 {% unless page.toc == false %}
 <style>
-div#toc >ul::before, div#toc2 >ul::before {
+nav#toc >ul::before, nav#toc2 >ul::before {
     content: "{{site.uistring.minitoc_title}}";
 }
 </style>
@@ -20,8 +22,18 @@ $('#toc').on('click', 'a', function() {
 })
 
 });
+$(window).scroll(function(){
+  $('nav#toc')[0].scrollTop=$(window).scrollTop();
+});
 </script>
 
+<nav id="toc"></nav>
 
-<div id="toc"></div>
+<style>
+
+</style>
+
+
+
 {% endunless %}
+</div>

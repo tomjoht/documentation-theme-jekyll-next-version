@@ -7,9 +7,9 @@
 {% for folder in doctags.folders %}
 {% for folderitem in folder.folderitems %}
 {% if folderitem.tag_name == tag %}
-<div class="tag-button">
+<span class="tag-button">
 <a href="{{ "tag-" | append: tag | append: ".html" }}"><span class="label label-default">{{folderitem.title}}</span></a>
-</div>
+</span>
 {% endif %}
 {% endfor %}
 {% endfor %}

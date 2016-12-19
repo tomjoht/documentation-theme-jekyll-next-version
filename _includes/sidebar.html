@@ -1,6 +1,7 @@
 
 {% assign sidebar = site.data[page.sidebar] %}
 <div class="mydocsidebar">
+<div class="sidebar-inner">
 <div class="productTitle">{{sidebar.sidebarTitle}}</div>
 <!-- search bar -->
 {% unless page.search == false %}
@@ -18,7 +19,6 @@
 </div>
 {% endunless %}
 <!-- end search bar -->
-
 <ul id="docnavsidebar" class="docnav">
     {% for folder in sidebar.folders %}
     <li class="level1"><a href="#">{{ folder.title }}</a>
@@ -94,5 +94,6 @@
         {% endfor %}
     </li>
 </ul>
+</div>
 </div>
 <script>$("li.open").parents('li').toggleClass("open");</script>

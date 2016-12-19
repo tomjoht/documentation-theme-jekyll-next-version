@@ -7,6 +7,8 @@ permalink: mydoc_about_ruby_gems_etc.html
 product: Theme instructions
 tag_list: taglist
 ---
+* TOC
+{:toc}
 
 ## About Ruby
 

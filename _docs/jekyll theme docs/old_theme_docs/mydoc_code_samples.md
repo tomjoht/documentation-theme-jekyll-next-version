@@ -9,6 +9,8 @@ sidebar: themeinstructions
 permalink: mydoc_code_samples.html
 product: Theme instructions
 ---
+* TOC
+{:toc}
 
 ## Code Samples
 

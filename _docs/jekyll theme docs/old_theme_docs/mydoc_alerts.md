@@ -8,6 +8,8 @@ sidebar: themeinstructions
 permalink: mydoc_alerts.html
 product: Theme instructions
 ---
+* TOC
+{:toc}
 
 ## About alerts
 
