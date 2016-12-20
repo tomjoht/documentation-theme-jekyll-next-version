@@ -15,11 +15,10 @@
     text-decoration: none;
     color: #666;
 }
-
+/* plus */
 .docnav li.level1 > a > span:after, .docnav li.level2 > a > span:after, .docnav li.level3 > a > span:after {
-    /*content: '\f0fe'; /* plus */
+    content: '\f196';
     font-family: 'FontAwesome';
-    content: '\f105';
     color: darkslategray;
     font-size:14px;
     padding-right: 12px;
@@ -31,21 +30,25 @@
 
 }
 
+/* empty square*/
 .docnav li.level1items > a:before, .docnav li.level2items > a:before, .docnav li.level3items > a:before {
-    /*content: '\f096'; /* empty square */*/
-    /*font-family: 'FontAwesome';*/
+    content: '\f096';
+    font-family: 'FontAwesome';
     color: lightgray;
     padding-right: 10px;
     text-decoration: none;
 }
 
+
+/* minus */
 .docnav li.open > a > span:after {
-    content: '\f107'; /* minus */
+    content: '\f147';
     font-family: 'FontAwesome';
     color: darkslategray;
     font-size:14px;
     padding-right: 8px;
 }
+
 
 .docnav li.level3, .docnav li.level3items {
     padding-left:2px
