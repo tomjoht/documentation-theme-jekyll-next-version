@@ -1,6 +1,6 @@
 ---
 title: Sample3 topic - Japanese
-permalink: sample3.html
+permalink: thing3.html
 sidebar: generic_ja
 ---
 

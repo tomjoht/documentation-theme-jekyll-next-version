@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>{{page.title}} | {{site.uistring.title}}</title>
     <base target="_self">
-    <meta name="description" content="{% if page.excerpt %} {{page.exercept}} {% else %}{{site.uistring.description}}{% endif %}" />
+    <meta name="description" content="{% if page.content %}{{ page.content | truncatewords: 30 | strip_html }} {% else %}{{site.uistring.description}}{% endif %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" value="notranslate">
     <link rel="icon"  type="image/x-icon" href="favicon.ico">
@@ -15,10 +15,10 @@
 
     <!--stylesheets / link tags loaded here-->
     <link rel="stylesheet" href="assets/css/sidebar.css" />
-    <link rel="stylesheet" href="assets/css/{{site.navbar_style}}.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/{{site.highlighting_css}}.css" />
+    <link rel="stylesheet" href="assets/css/{{site.navbar_style}}.css" />
     <link rel="stylesheet" href="assets/css/customstyles.css" />
 
     <script src="assets/js/jquery.min.js"></script>
@@ -144,6 +144,7 @@
         </div><!--/.row-->
     </div><!--/.container-->
 </div><!--/.page-container-->
+
 
 
 <!--scripts loaded here-->

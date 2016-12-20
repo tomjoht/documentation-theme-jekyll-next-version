@@ -1,6 +1,6 @@
 ---
 title: Sample 1 - Japanese
-permalink: sample1.html
+permalink: thing1.html
 sidebar: generic_ja
 ---
 

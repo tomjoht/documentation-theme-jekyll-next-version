@@ -4,7 +4,7 @@ language: japanese
 url: /
 
 # link to github repo
-github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
+# github_editme_path: https://github.com/tomjohnson1492/documentation-theme-jekyll-next-version/blob/gh-pages/
 github_edit_button_text: 編集
 image_path: docs_ja/images/
 
@@ -17,10 +17,10 @@ highlighting_css: monokai
 # options: "monokai" (black), "syntax" (white)
 
 image_path: /docs_ja/images/
-navbar_style: lighttheme
-navbar_logo: docs_ja/images/samplelogo.png
+navbar_style: darktheme
+# navbar_logo: docs_ja/images/samplelogo.png
 
-port: 4000
+port: 4001
 highlighter: rouge
 
 markdown: kramdown

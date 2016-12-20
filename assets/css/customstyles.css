@@ -11,6 +11,16 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: Tahoma;
 }
+
+.h2, h2 {
+    font-size: 24px;
+}
+.h3, h3 {
+  font-size: 18px;
+}
+.h4, h4 {
+  font-size: 16px;
+}
 .text-center {
     padding-top: 20px;
 }
@@ -65,9 +75,6 @@ h1, h2, h3, h4, h5 {
     #sidebar {
         padding-top:0;
     }
-    .affix.right-lane {
-      display: none;
-    }
     .toc-main-column {
       display: block;
     }
@@ -76,6 +83,9 @@ h1, h2, h3, h4, h5 {
     }
     .tag-button {
       display: inline;
+    }
+    .right-lane {
+      display: none;
     }
 }
 
@@ -113,6 +123,10 @@ nav#toc ul, nav#toc2 ul {
     border-radius: 5px;
     max-width: 300px;
     color: gray;
+}
+
+nav#toc2 ul {
+  padding-left: 25px;
 }
 
 /* mini toc styles end */
@@ -196,14 +210,13 @@ ul#results-container a: hover {
 }
 #search-input {
     padding: .5em;
-    margin-left:20px;
     width:20em;
     font-size: 0.8em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: right;
-    margin-top:10px;
+    margin-top:5px;
 }
 #search-results {
     margin-top:30px;
@@ -433,11 +446,11 @@ padding-bottom:0px;
 }
 
 img.navbar-logo {
-    max-width: 160px;
+    max-width: 130px;
+    padding:0px;
     padding-bottom: 5px;
 }
 .navbar-brand {
-    padding:0px;
     margin-right: 30px;
 }
 
@@ -449,6 +462,7 @@ img.navbar-logo {
 
 .toggle-sidebar-button {
   padding-bottom: 3px;
+  color: white;
 }
 
 /* search adjustments */
@@ -491,4 +505,12 @@ img.navbar-logo {
 .right-lane .tag-button {
   margin: 10px 0px;
   display: block;
+}
+
+ul#docnavsidebar li a:focus {
+  text-decoration: none;
+}
+
+.searchForm404 {
+  margin: 20px 0px;
 }

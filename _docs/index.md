@@ -5,7 +5,7 @@ sidebar: generic
 topnav: topnav
 ---
 
-This is the English homepage.
+This is the English homepage. This is a Jekyll theme in development.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus mauris id commodo ultrices. Proin tristique congue elit nec commodo. Sed blandit eros leo, vitae viverra nisl bibendum vitae. Sed eu nisi nec nisl eleifend dictum. In hac habitasse platea dictumst. Suspendisse dignissim arcu eu ex iaculis aliquet. Proin venenatis, neque efficitur elementum tempus, erat ante accumsan dui, at accumsan eros lorem ac augue. Aliquam in tellus risus. Vestibulum et ultricies erat. Proin at vehicula mi, sed lobortis justo. Donec cursus posuere dignissim.
 

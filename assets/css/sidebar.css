@@ -1,5 +1,5 @@
 .docnav {
-    padding-left:20px;
+    padding-left:0px;
 }
 .docnav ul {
     padding-left:15px
@@ -11,21 +11,18 @@
     border-bottom: 0px;
 }
 
-.docnav li a:hover {
+.docnav li a:hover, .docnav li a:active {
     text-decoration: none;
     color: #666;
 }
 
-.docnav li a:active {
-    text-decoration: none;
-}
-
 .docnav li.level1 > a > span:after, .docnav li.level2 > a > span:after, .docnav li.level3 > a > span:after {
-    content: '\f0fe'; /* plus */
+    /*content: '\f0fe'; /* plus */
     font-family: 'FontAwesome';
+    content: '\f105';
     color: darkslategray;
     font-size:14px;
-    padding-right: 8px;
+    padding-right: 12px;
     text-decoration: none;
 }
 
@@ -35,15 +32,15 @@
 }
 
 .docnav li.level1items > a:before, .docnav li.level2items > a:before, .docnav li.level3items > a:before {
-    content: '\f096'; /* empty square */
-    font-family: 'FontAwesome';
+    /*content: '\f096'; /* empty square */*/
+    /*font-family: 'FontAwesome';*/
     color: lightgray;
     padding-right: 10px;
     text-decoration: none;
 }
 
 .docnav li.open > a > span:after {
-    content: '\f146'; /* minus */
+    content: '\f107'; /* minus */
     font-family: 'FontAwesome';
     color: darkslategray;
     font-size:14px;
@@ -62,10 +59,6 @@
 
 .docnav li {
     margin: 7px 0px;
-}
-
-.docnav li a {
-    line-height: 12px;
 }
 
 li.level1.open > ul > li.level1items.open a, li.level2.open > ul > li.level2items.open a, li.level3.open > ul > li.level3items.open a {
@@ -110,6 +103,7 @@ hr.resourceSeparator {
   white-space: -pre-wrap; /* Opera 4-6 */
   white-space: -o-pre-wrap; /* Opera 7 */
   word-wrap: break-word; /* Internet Explorer 5.5+ */
+  text-indent: 0px;
 }
 
 @media (max-width: 600px) {

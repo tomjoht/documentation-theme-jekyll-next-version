@@ -6,8 +6,6 @@ sidebar: generic
 type: search
 ---
 
-{% if jekyll.environment == "production" %}
-
 <div style="display:none">
 <form action="search-{{page.sidebar}}.html" method="get">
   <div class="input-group search">
@@ -46,5 +44,3 @@ type: search
 
 <script src="assets/js/lunr.min.js"></script>
 <script src="assets/js/search.js"></script>
-
-{% endif %}

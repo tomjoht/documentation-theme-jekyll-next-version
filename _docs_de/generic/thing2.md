@@ -1,6 +1,6 @@
 ---
 title: Sample2 topic - German
-permalink: sample2.html
+permalink: thing2.html
 sidebar: generic_de
 product: Generic
 ---

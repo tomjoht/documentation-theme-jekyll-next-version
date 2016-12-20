@@ -6,6 +6,8 @@ tags: [getting-started, formatting]
 product: Generic
 ---
 
+This is the English Sample 1 page.blah blah
+
 ```java
 public class EnhancedFor
 {

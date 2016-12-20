@@ -1,7 +1,8 @@
 {% unless page.toc == false %}
 <style>
-div#toc >ul::before {
+div#toc2 >ul::before {
     content: "{{site.uistring.minitoc_title}}";
+    margin-left: -20px;
 }
 </style>
 <script>
@@ -15,13 +16,12 @@ $('#toc2').on('click', 'a', function() {
   var target = $(this.getAttribute('href'))
     , scroll_target = target.offset().top
 
-  $(window).scrollTop(scroll_target - 60);
+  $(window).scrollTop(scroll_target - 80);
   return false
 })
 
 });
 </script>
-
 
 <nav id="toc2"></nav>
 {% endunless %}
